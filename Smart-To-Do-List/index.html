@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🟢 Smart To-Do List</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn complete">Completed</button>
+            <button class="filter-btn pending">Pending</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList">
+            <!-- Example Task -->
+            <li class="task">
+                <span class="task-text">Learn JavaScript DOM</span>
+                <div class="task-actions">
+                    <button class="complete-btn">✔</button>
+                    <button class="delete-btn">✖</button>
+                    <button class="edit-btn">✎</button>
+                </div>
+            </li>
+
+            <li class="task completed">
+                <span class="task-text">Build To-Do App</span>
+                <div class="task-actions">
+                    <button class="complete-btn">✔</button>
+                    <button class="delete-btn">✖</button>
+                    <button class="edit-btn">✎</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
