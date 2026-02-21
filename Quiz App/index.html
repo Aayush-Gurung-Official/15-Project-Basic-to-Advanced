@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    
+    <!-- Header -->
+    <div class="quiz-header">
+        <h2 class="quiz-title">JavaScript Quiz</h2>
+        <div class="timer">
+            ⏳ Time Left: <span id="time">15</span>s
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Question -->
+    <div class="question-box">
+        <h3 id="question">Question text will appear here</h3>
+    </div>
+
+    <!-- Options -->
+    <div class="options">
+        <button class="option-btn">Option 1</button>
+        <button class="option-btn">Option 2</button>
+        <button class="option-btn">Option 3</button>
+        <button class="option-btn">Option 4</button>
+    </div>
+
+    <!-- Next Button -->
+    <button class="next-btn">Next Question</button>
+
+    <!-- Result Section (Hidden Initially) -->
+    <div class="result-box" id="result-box">
+        <h2>Your Score: <span id="score">0</span></h2>
+        <button class="restart-btn">Restart Quiz</button>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
