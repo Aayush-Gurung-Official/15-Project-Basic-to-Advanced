@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GitHub Profile Finder</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Enter GitHub Username..." id="username">
+            <button id="search-button">Search</button>
+        </div>
+
+        <!-- Loader -->
+        <div class="loader hidden"></div>
+
+        <!-- Error Message -->
+        <p class="error hidden">User not found!</p>
+
+        <!-- Profile Card -->
+        <div class="profile-card hidden">
+            <div class="profile-header">
+                <img src="https://via.placeholder.com/150" alt="Profile Image">
+                <div class="profile-info">
+                    <h2>Username</h2>
+                    <p>Bio of the user will appear here...</p>
+                    <div class="stats">
+                        <span>Repos: 10</span>
+                        <span>Followers: 200</span>
+                        <span>Following: 50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repositories -->
+            <div class="repos">
+                <h3>Repositories</h3>
+                <div class="repo-card">
+                    <h4>Repository Name</h4>
+                    <p>⭐ 25 | 🍴 10</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
