@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Shop</h1>
+    <div class="cart-icon">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product-card">
+        <img src="assert/b.jpg" alt="Product">
+        <h3>Air Force</h3>
+        <p class="price">Rs 2500</p>
+        <button class="cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assert/a.jpg" alt="Product">
+        <h3>Air Force-2</h3>
+        <p class="price">Rs 4000</p>
+        <button class="cart">Add to Cart</button>
+      </div>
+    </section>
+
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <div class="cart-items">
+        <!-- Dynamic items here -->
+      </div>
+      <div class="cart-total">
+        Total: Rs <span id="total-price">0</span>
+      </div>
+    </aside>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
