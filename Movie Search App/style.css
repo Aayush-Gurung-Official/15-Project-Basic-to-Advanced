@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.rating {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.green { color: #4caf50; }
+.orange { color: #ff9800; }
+.red { color: #f44336; }
+
+.pagination {
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
