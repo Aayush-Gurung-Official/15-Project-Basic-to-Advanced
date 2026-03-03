@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Project Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mini Project Manager</h1>
+
+    <div class="controls">
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input type="date" id="dueDate">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search..." onkeyup="renderTasks()">
+
+      <select id="filter" onchange="renderTasks()">
+        <option value="All">All</option>
+        <option value="Completed">Completed</option>
+        <option value="Pending">Pending</option>
+        <option value="High">High Priority</option>
+      </select>
+
+      <select id="sort" onchange="renderTasks()">
+        <option value="None">Sort</option>
+        <option value="Date">By Due Date</option>
+        <option value="Priority">By Priority</option>
+      </select>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
